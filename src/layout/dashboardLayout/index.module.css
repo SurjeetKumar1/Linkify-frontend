@@ -1,0 +1,217 @@
+
+
+.homeContainer {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f9fafb;
+}
+
+.homeContainer > div:nth-child(odd) {
+    flex: 0 0 20%;
+    padding: 1.5rem;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.homeContainer > div:nth-child(odd)::-webkit-scrollbar {
+    width: 6px;
+}
+
+.homeContainer > div:nth-child(odd)::-webkit-scrollbar-thumb {
+    background-color: #d1d5db;
+    border-radius: 3px;
+}
+
+.homeContainer > div:nth-child(odd)::-webkit-scrollbar-track {
+    background-color: #f3f4f6;
+}
+
+.homeContainer > div:nth-child(even) {
+    flex: 1;
+    padding: 1.5rem;
+    border-left: 1px solid #e5e7eb;
+    border-right: 1px solid #e5e7eb;
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-width: thin; /* For Firefox */
+}
+
+.homeContainer > div:nth-child(even)::-webkit-scrollbar {
+    width: 6px; /* Thinner scrollbar */
+}
+
+.homeContainer > div:nth-child(even)::-webkit-scrollbar-thumb {
+    background-color: #d1d5db;
+    border-radius: 3px;
+}
+
+.homeContainer > div:nth-child(even)::-webkit-scrollbar-track {
+    background-color: #f3f4f6;
+}
+
+.homeConatiner_leftBar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: sticky;
+    top: 0;
+    height: fit-content;
+}
+
+.sideBarOption {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    gap: 1rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    color: #4b5563;
+}
+
+.sideBarOption:hover {
+    background-color: #f3f4f6;
+    transform: translateX(5px);
+    color: #2563eb;
+}
+
+.sideBarOption > svg {
+    height: 1.4em;
+    width: 1.4em;
+    min-width: 1.4em;
+    stroke-width: 1.8;
+}
+
+.homeContainer_extraContainer {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: sticky;
+    top: 0;
+    height: fit-content;
+    overflow-y: auto;
+    scrollbar-width: thin; /* For Firefox */
+}
+
+.homeContainer_extraContainer::-webkit-scrollbar {
+    width: 6px;
+}
+
+.homeContainer_extraContainer::-webkit-scrollbar-thumb {
+    background-color: #d1d5db;
+    border-radius: 3px;
+}
+
+.homeContainer_extraContainer::-webkit-scrollbar-track {
+    background-color: #f3f4f6;
+}
+
+.homeContainer_extraContainer h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.extraContainer_profiles {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #f3f4f6;
+    font-size: 0.95rem;
+    color: #4b5563;
+    transition: background-color 0.3s ease;
+}
+
+.extraContainer_profiles:hover {
+    background-color: #f3f4f6;
+}
+
+.homeContainer_feedContainer {
+    padding-inline: 1rem;
+}
+
+.mobileNavBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    display: none;
+    justify-content: space-around;
+    background: #ffffff;
+    align-items: center;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 0;
+    z-index: 10;
+}
+
+.mobileNavBar svg {
+    height: 1.8rem;
+    width: 1.8rem;
+    color: #4b5563;
+    transition: color 0.3s ease;
+}
+
+.singleNavItemHolder_mobileView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.singleNavItemHolder_mobileView:hover svg {
+    color: #2563eb;
+}
+
+@media only screen and (max-width: 600px) {
+    .homeContainer_extraContainer {
+        display: none;
+    }
+
+    .homeContainer {
+        display: block;
+        height: auto;
+        overflow: visible;
+    }
+
+    .homeConatiner_leftBar {
+        display: none;
+    }
+
+    .mobileNavBar {
+        display: flex;
+    }
+
+    .homeContainer_feedContainer {
+        padding-bottom: 8vh;
+        padding-inline: 0.5rem;
+        height: auto;
+        overflow: visible;
+    }
+
+    .homeContainer > div:nth-child(odd) {
+        flex: none;
+    }
+
+    .homeContainer > div:nth-child(even) {
+        border: none;
+    }
+}
+
+
+
+
+ 

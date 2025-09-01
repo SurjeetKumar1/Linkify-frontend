@@ -1,0 +1,131 @@
+  .container {
+    font-family: "Poppins", sans-serif;
+    padding: 1.2rem;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-inline: 2rem;
+    height: 80vh;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .mainContainerLetf {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .mainContainerRight {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mainContainerRight img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .mainContainerRight img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  .mainContainerLetf > p:nth-child(1) {
+    font-size: 3.2rem;
+    background: -webkit-linear-gradient(45deg, #1a1a1a, #6a6a6a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mainContainerLetf > p:nth-child(2) {
+    color: #5c5c5c;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  
+  .mainContainerLetf > div.buttonJoin {
+    width: fit-content;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+    margin-top: 0.8rem;
+    font-size: 1.4rem;
+    background: #0A66C2;
+    color: #ffffff;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(10, 54, 214, 0.3);
+  }
+  
+  .mainContainerLetf > div.buttonJoin:hover {
+    transform: translateY(-3px);
+    background:#004182;
+  }
+  
+  .mainContainerLetf > div.buttonJoin:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 6px rgba(10, 75, 214, 0.2);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .mainContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding-top: 1.3rem;
+      height: auto;
+      padding-inline: 1rem;
+    }
+  
+    .mainContainerLetf {
+      flex: 1;
+      padding-top: 1.5rem;
+      text-align: center;
+    }
+  
+    .mainContainerLetf > p:nth-child(1) {
+      font-size: 2.5rem;
+    }
+  
+    .mainContainerLetf > p:nth-child(2) {
+      font-size: 1.2rem;
+    }
+  
+    .mainContainerLetf > div.buttonJoin {
+      margin: 0 auto;
+      font-size: 1.2rem;
+      padding-inline: 1.8rem;
+      padding-block: 0.8rem;
+    }
+  
+    .mainContainerRight {
+      flex: 1;
+    }
+  
+    .mainContainerRight img {
+      width: 100%;
+      max-width: none;
+    }
+  }

@@ -1,0 +1,107 @@
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90svh;
+    /* background-color: snow; */
+}
+
+.cardContainer{
+    height: 80vh;
+    background-color:white;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80vw;
+    /* box-shadow: 10px 10px 15px rgb(173,173,173); */
+    box-shadow: 
+  0 0 8px rgba(173, 173, 173, 0.6),
+  0 0 18px rgba(173, 173, 173, 0.4);
+
+
+}
+.cardContainerLeft{
+    flex: 0.6;
+    padding: 2rem;
+    text-align: center;
+}
+.cardContainerRight{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+    flex: 0.4;
+    background-color: #00488b;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    padding-inline: 1.2rem;
+}
+.cardLeftHeading{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.inputField{
+    padding-inline: 1.3rem;
+    padding-block: 0.8rem;
+    outline: none;
+    border-radius: 7px;
+    border: 1px solid silver;
+    width: 100%;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.3rem;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 1.2rem;
+}
+.inputRow{
+    
+    display: flex;
+    gap: 1.2rem;
+    width: 100%;
+}
+.buttonWithoutOutline {
+    padding: 0.8rem 1.3rem;
+    background-color: silver;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.buttonWithoutOutline:hover {
+    background-color: #00488b;
+    color: white;
+}
+.rightContainerBtn{
+    padding: 0.8rem 1.3rem;
+    background-color: silver;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;   
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    color: black;
+}
+.rightContainerBtn:hover{
+    background-color:white;
+    color:  #00488b;;
+}
+
+@media only screen and (max-width:600px) {
+
+    .cardContainer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+ 

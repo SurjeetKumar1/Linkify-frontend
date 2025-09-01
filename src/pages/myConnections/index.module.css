@@ -1,0 +1,71 @@
+.userCrad {
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.userCrad:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profilePicture > img {
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(3, 93, 183, 0.2);
+    transition: border-color 0.2s ease;
+}
+
+.userCrad:hover .profilePicture > img {
+    border-color: rgba(3, 93, 183, 0.5);
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.userInfo h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.userInfo p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.connectedBtn {
+    padding-inline: 1.2rem;
+    padding-block: 0.5rem;
+    background-color: rgba(3, 93, 183, 0.905);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-left: auto;
+}
+
+.connectedBtn:hover {
+    background-color: rgba(3, 93, 183, 1);
+    transform: scale(1.05);
+}
+
+.connectedBtn:active {
+    transform: scale(0.98);
+}
