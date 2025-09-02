@@ -203,8 +203,17 @@ After pushing a change to the `main` branch, the pipeline will run automatically
   <img src="https://github.com/SurjeetKumar1/Linkify-frontend/blob/main/assets/edit-user-profile1.png" alt="Edit Profile 1" width="48%"/>
   <img src="https://github.com/SurjeetKumar1/Linkify-frontend/blob/main/assets/Edit-user-profile.png" alt="Edit Profile 2" width="48%"/>
 </p>
+<br><br>
 <p align="center">
   <strong>Login & Signup Page</strong><br>
   <img src="https://github.com/SurjeetKumar1/Linkify-frontend/blob/main/assets/signin.png" alt="Sign In Page" width="48%"/>
   <img src="https://github.com/SurjeetKumar1/Linkify-frontend/blob/main/assets/signup.png" alt="Sign Up Page" width="48%"/>
 </p>
+<br><br>
+<p align="center">
+  <strong>Connection page & Discover Page</strong><br>
+  <img src="https://github.com/SurjeetKumar1/Linkify-frontend/blob/main/assets/my-connections.png" alt="Sign In Page" width="48%"/>
+  <img src="https://github.com/SurjeetKumar1/Linkify-frontend/blob/main/assets/discover.png" alt="Sign Up Page" width="48%"/>
+</p>
+
+
